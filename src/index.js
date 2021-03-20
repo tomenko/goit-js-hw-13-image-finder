@@ -71,7 +71,6 @@ const options = {
 };
 
 const observer = new IntersectionObserver(observerCallback, options);
-console.log(observer);
 function hideLoader() {
   refs.loader.classList.add('hide-loader');
 }
