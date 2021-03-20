@@ -8,7 +8,7 @@ export default class ApiImages {
     }
 
     async fetchImages() {
-        const response = await fetch(`${BASE_URL}&q=${this.searchQuery}&page=${this.page}&per_page=10&key=${KEY_API}`)
+        const response = await fetch(`${BASE_URL}&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${KEY_API}`)
 
         if (!response.ok) {
             throw response;
