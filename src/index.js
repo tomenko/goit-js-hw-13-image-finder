@@ -60,7 +60,7 @@ function renderMore() {
     .then(hideLoader)
     .catch(onFetchError);
 }
-//----/IntersectionObserver/----//
+
 const observerCallback = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -76,7 +76,6 @@ const options = {
 
 const observer = new IntersectionObserver(observerCallback, options);
 console.log(observer);
-//----/IntersectionObserver/----//
 function hideLoader() {
   refs.loader.classList.add('hide-loader');
 }
