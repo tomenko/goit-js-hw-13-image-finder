@@ -1,6 +1,6 @@
 import './styles.css';
 import cardItem from './templates/cardItem.hbs'
-import { onError, onFetchError } from './components/notifications';//----------------
+import { onError, onFetchError } from './components/notifications';
 import ApiImages from './api/apiService'
 console.log(ApiImages);
 import refs from './settings/refs';
@@ -11,8 +11,8 @@ import setLightbox from './components/lightbox';
 console.log(setLightbox);
 
 
-refs.searchForm.addEventListener('submit', onSearch);//-------------------
-refs.gallery.addEventListener('click', setLightbox);//------------------
+refs.searchForm.addEventListener('submit', onSearch);
+refs.gallery.addEventListener('click', setLightbox);
 
 function onSearch(event) {
   event.preventDefault();
