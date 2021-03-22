@@ -23,7 +23,7 @@ export default class ApiImages {
           })
           .catch(error => {
             console.warn(error);
-          });
+          })
     }
 
     augmentPage() {

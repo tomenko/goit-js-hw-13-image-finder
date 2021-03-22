@@ -6,7 +6,6 @@ import refs from './settings/refs';
 const apiImages = new ApiImages();
 import setLightbox from './components/lightbox';
 
-
 refs.searchForm.addEventListener('submit', onSearch);
 refs.gallery.addEventListener('click', setLightbox);
 
